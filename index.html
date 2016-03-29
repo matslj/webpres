@@ -5,12 +5,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="theme.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     </head>
     <body>
         <div id="wrapper">
             <header>
                 <div id="logowrap">
-                    <img src="anarchy_120.png" alt="logo" />
+                    <img id="logoImg" src="anarchy_120.png" alt="logo" />
                     <div>
                         <h1>Webbutveckling</h1>
                         <p>Presenterar grundläggande begrepp rörande webbutveckling</p>
@@ -21,7 +24,7 @@
                         <ul>
                             <li><a href="index.html">Hem</a></li>
                             <li><a href="om.html">Om</a></li>
-                            <li><a href="#">Extra</a></li>
+                            <li><a id="extra" href="#">Extra</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -39,5 +42,6 @@
                 <p>2012 - Min webbsida senast uppdaterad <time datetime="2016-02-19T09:00:00">2016-02-19</time></p>
             </footer>
         </div>
+        <script type="text/javascript" src="flip.js"></script>
     </body>
 </html>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Komp" default="build.all">
+    
+    <tstamp>
+        <format property="build.time" pattern="yyyy-MM-dd hh:mm:ss" locale="se,SV"/>
+    </tstamp>
+
+    <!-- set global properties for this build -->
+    <loadproperties srcfile="ant.properties" />
+
+    <!-- Create the build directory -->
+    <target name="init">
+        <!-- Create the build directory structure used by compile -->
+        <mkdir dir="${build.dir}"/>
+    </target>
+
+    <!-- Clean the build directory -->
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+    </target>
+    
+    <target name="prepare-html">
+      <copy file="index.html" todir="${build.dir}/html" preservelastmodified="true"/>
+      <copy file="om.html" todir="${build.dir}/html" preservelastmodified="true"/>
+      <copy file="anarchy_120.png" todir="${build.dir}/html" preservelastmodified="true"/>
+    </target>
+    
+    <target name="prepare-css">
+      <copy file="index.html" todir="${build.dir}/css" preservelastmodified="true"/>
+      <copy file="om.html" todir="${build.dir}/css" preservelastmodified="true"/>
+      <copy file="anarchy_120.png" todir="${build.dir}/css" preservelastmodified="true"/>
+      <copy file="theme.css" todir="${build.dir}/css" preservelastmodified="true"/>
+    </target>
+    
+    <target name="prepare-js">
+      <copy file="index.html" todir="${build.dir}/js" preservelastmodified="true"/>
+      <copy file="om.html" todir="${build.dir}/js" preservelastmodified="true"/>
+      <copy file="anarchy_120.png" todir="${build.dir}/js" preservelastmodified="true"/>
+      <copy file="orc-warrior-256x256.png" todir="${build.dir}/js" preservelastmodified="true"/>
+      <copy file="theme.css" todir="${build.dir}/js" preservelastmodified="true"/>
+      <copy file="flip.js" todir="${build.dir}/js" preservelastmodified="true"/>
+    </target>
+    
+    <target name="build.html" depends="clean,init,prepare-html">
+      <echo>Build-html completed</echo>
+    </target>
+    
+    <target name="build.css" depends="clean,init,prepare-css">
+      <echo>Build-css completed</echo>
+    </target>
+    
+    <target name="build.js" depends="clean,init,prepare-js">
+      <echo>Build-js completed</echo>
+    </target>
+    
+    <target name="build.all" depends="clean,init,prepare-html,prepare-css,prepare-js">
+      <echo>Build-all completed</echo>
+    </target>
+</project>
