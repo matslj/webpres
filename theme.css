@@ -1,0 +1,113 @@
+/* 
+    Created on : 2016-feb-19, 12:38:57
+    Author     : ldc-msl, Ldc
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: Tahoma, sans-serif;
+    font-size: 80%;
+}
+
+#wrapper {
+    width: 800px;
+    margin: 20px auto;
+    border: 1px solid black;
+    padding: 20px;
+    
+    -webkit-border-top-left-radius: 60px;
+    -webkit-border-bottom-right-radius: 60px;
+    -moz-border-radius-topleft: 60px;
+    -moz-border-radius-bottomright: 60px;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+/* -- Header -- */
+header {
+    /*overflow: auto;*/
+}
+
+header img, header div div {
+    float: left;
+    margin-right: 10px;
+}
+
+/* -- Navigeringsfält -- */
+header div#navwrap {
+    clear: both;
+    padding-top: 20px;
+}
+
+header nav {
+    margin: 0 -20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+header nav li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+header nav li:last-child {
+    border-right: none;
+    display: inline-block;
+    border-left:1px solid #bbb;
+    float: right;
+}
+
+header nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+header nav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+header nav .active {
+    background-color: #4CAF50;
+}
+
+/* -- Notis -- */
+article aside {
+    float: right;
+    width: 350px;
+    margin: 0 10px 10px 10px;
+    padding: 15px;
+    border: 1px solid black;
+    
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.48);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.48);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.48);
+}
+
+article aside h3 {
+    margin-top: 0px;
+}
+
+article aside p:last-child {
+    margin-bottom: 0px;
+}
+
+/* -- Footer -- */
+footer {
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-style: italic;
+    text-align: center;
+    font-size: 0.8em
+}
+
