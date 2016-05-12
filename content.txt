@@ -1,0 +1,10 @@
+<h2>From wikipedia on plain text</h2>
+<p>
+	Before the early 1960s, computers were mainly used for number-crunching rather than for text,
+	and memory was extremely expensive. Computers often allocated only 6 bits for each character, permitting
+	only 64 characters-assigning codes for A-Z, a-z, and 0-9 would leave only 2 codes: nowhere near enough. Most
+	computers opted not to support lower-case letters. Thus, early text projects such as
+	<a href="/wiki/Roberto_Busa" title="Roberto Busa">Roberto Busa</a>'s
+	<a href="/w/index.php?title=Index_Thomisticus&amp;action=edit&amp;redlink=1" class="new" title="Index Thomisticus (page does not exist)">Index Thomisticus</a>,
+	the <a href="/wiki/Brown_Corpus" title="Brown Corpus">Brown Corpus</a>, and others had to resort to conventions such as keying an asterisk preceding letters actually intended to be upper-case.
+</p>

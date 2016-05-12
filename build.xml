@@ -40,6 +40,16 @@
       <copy file="theme.css" todir="${build.dir}/js" preservelastmodified="true"/>
       <copy file="flip.js" todir="${build.dir}/js" preservelastmodified="true"/>
     </target>
+	
+	<target name="prepare-ajax">
+      <copy file="index.html" todir="${build.dir}/ajax" preservelastmodified="true"/>
+      <copy file="om.html" todir="${build.dir}/ajax" preservelastmodified="true"/>
+      <copy file="anarchy_120.png" todir="${build.dir}/ajax" preservelastmodified="true"/>
+      <copy file="orc-warrior-256x256.png" todir="${build.dir}/ajax" preservelastmodified="true"/>
+      <copy file="theme.css" todir="${build.dir}/ajax" preservelastmodified="true"/>
+	  <copy file="content.txt" todir="${build.dir}/ajax" preservelastmodified="true"/>
+	  <copy file="ajax.js" todir="${build.dir}/ajax" preservelastmodified="true"/>
+    </target>
     
     <target name="build.html" depends="clean,init,prepare-html">
       <echo>Build-html completed</echo>
@@ -52,8 +62,12 @@
     <target name="build.js" depends="clean,init,prepare-js">
       <echo>Build-js completed</echo>
     </target>
+	
+	<target name="build.ajax" depends="clean,init,prepare-ajax">
+      <echo>Build-ajax completed</echo>
+    </target>
     
-    <target name="build.all" depends="clean,init,prepare-html,prepare-css,prepare-js">
+    <target name="build.all" depends="clean,init,prepare-html,prepare-css,prepare-js,prepare-ajax">
       <echo>Build-all completed</echo>
     </target>
 </project>
