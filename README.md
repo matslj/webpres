@@ -2,12 +2,13 @@
 av Mats Ljungquist
 
 ## Introduktion
-Det här projektet används som en del av en presentation av olika webbutvecklingsrelaterade
-features. Tanken är att man ska lägga på en feature i taget för att på detta sätt visa vad
-olika delmoment bidrar till för helheten.
+Det här projektet används i en presentation för att förevisa några webbutvecklingsrelaterade
+inslag:
 
-## Stegordning
 - HTML
-- CSS - lägg på flera csser efter varandra.
-- JAVASCRIPT
-- Responsive design
+- HTML + CSS
+- HTML + CSS + Javascript
+- HTML + CSS + Javascript + Ajax 
+
+## Förberedelse
+Installera apache ant och kör 'ant' i rotkatalogen. Detta kommer att skapa 4 olika underkataloger i en build/-katalog, varje underkatalog motsvarar en punkt i listan under 'introduktion' ovan.
